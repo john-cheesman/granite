@@ -1,0 +1,53 @@
+//
+// Form Reset
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+input, select, textarea {
+    background-image: none; // Reset for Firefox Android
+    background-color: palette(white); // Reset for Chrome Android
+    border: none;
+
+    &:focus {
+        outline: none; // Remove blue outline from webkit
+    }
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+input[type="search"] {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+button {
+    padding: 0;
+    background-image: none; // Reset for Firefox Android
+
+    &:focus {
+        outline: none; // Remove webkit outline
+    }
+}

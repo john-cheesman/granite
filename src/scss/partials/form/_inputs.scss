@@ -1,0 +1,22 @@
+//
+// Inputs
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+input {
+    width: 100%;
+    padding: $input-padding;
+    color: palette(grey, dark);
+    background-color: palette(grey, light);
+
+    &:hover, &:focus {
+        background-color: palette(grey);
+    }
+
+    &[disabled] {
+        color: palette(grey, light);
+    }
+}
+
+input {
+    @include line-height($input-line-height-multiple, $input-font-size);
+}

@@ -1,0 +1,11 @@
+//
+// Line Height Mixin
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Set a line height derived from $spacing-unit based on a given font size
+//     $line-height-multiple: the desired multiple of $spacing-unit
+//     $font-size:            the font size of the element in pixels
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+@mixin line-height($line-height-multiple, $font-size) {
+    line-height: strip-unit(($spacing-unit * $line-height-multiple)) / strip-unit($font-size);
+}

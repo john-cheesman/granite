@@ -1,0 +1,11 @@
+//
+// Palette Function
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Return a colour from the palettes map
+//     $palette: Name of the palette
+//     $tone:    Optionally change the tone
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+@function palette($palette, $tone: 'medium') {
+    @return map-get(map-get($palettes, $palette), $tone);
+}

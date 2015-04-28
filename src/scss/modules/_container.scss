@@ -1,0 +1,13 @@
+//
+// Container Mixin
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Centre and constrain width
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+@mixin container($max-width: $container-width) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $max-width;
+
+    @include rem(padding, $container-padding);
+}

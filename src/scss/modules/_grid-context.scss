@@ -1,0 +1,19 @@
+//
+// Grid Context Mixin
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Setup a grid container
+//     $padding:   Optional padding for the container
+//     $spacing:   Set the spacing width in pixels
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+@mixin grid-context($padding: false, $spacing: $spacing-unit) {
+    @include clearfix;
+
+    @if ($padding) {
+        @include rem(padding, $spacing $spacing $spacing 0);
+    }
+
+    @else {
+        @include rem(margin, 0 0 0 inverse($spacing));
+    }
+}

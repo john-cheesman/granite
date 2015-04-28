@@ -1,0 +1,13 @@
+//
+// Links
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+a {
+    color: palette(blue);
+    text-decoration: none;
+
+    &:hover, &:focus {
+        color: palette(blue, dark);
+        outline: none;
+    }
+}

@@ -1,0 +1,67 @@
+//
+// Base
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Variables
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Palette
+$palettes: (
+    white: (
+        medium: rgb(255,255,255)
+    ),
+    grey: (
+        light: rgb(245, 245, 245),
+        medium: rgb(229, 229, 229),
+        dark: rgb(85, 92, 97)
+    ),
+    blue: (
+        medium: rgb(105, 155, 224),
+        dark: rgb(79, 106, 151)
+    )
+) !default;
+
+// Font families
+$base-font-family:                    'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$header-font-family:                  'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+
+// Dimensions
+$baseline-px:                         16px !default;
+$spacing-unit:                        24px !default;
+$container-width:                     40em !default;
+$container-padding:                   0 $spacing-unit !default;
+$default-button-padding:              0 ($spacing-unit / 2) !default;
+$content-margin:                      0 0 $spacing-unit 0 !default;
+$driver-padding:                      ($spacing-unit / 2) !default;
+$driver-margin:                       0 0 $spacing-unit 0 !default;
+$input-padding:                       0 ($spacing-unit / 2) !default;
+
+// Typography
+$default-button-font-size:            18px !default;
+$default-button-line-height-multiple: 2 !default;
+$primary-footer-font-size:            14px !default;
+$input-font-size:                     14px !default;
+$input-line-height-multiple:          2 !default;
+
+// Headings
+// Major third @16px
+$giga:                                76px !default;
+$mega:                                61px !default;
+$kilo:                                49px !default;
+$alpha:                               31px !default;
+$beta:                                25px !default;
+$gamma:                               20px !default;
+$delta:                               16px !default;
+$epsilon:                             13px !default;
+$zeta:                                10px !default;
+
+// Borders
+$border-width-small:                  2px !default;
+
+// Font weights
+$weight-bold:                         700 !default;
+
+// Import normalize and modules
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+@import 'vendor/normalize';
+@import 'modules/all';

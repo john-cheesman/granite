@@ -1,0 +1,63 @@
+//
+// Scaffolding
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Set box-sizing: border-box on all elements
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+// Defaults
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+html {
+    font-size: 87.5%;
+    font-family: $base-font-family;
+    color: palette(grey, dark);
+    line-height: 1.6;
+
+    @include bp(medium) {
+        font-size: 100%;
+    }
+
+    @include bp(large) {
+        font-size: 112.5%;
+    }
+}
+
+body {
+    @include container;
+}
+
+img {
+    max-width: 100%; // Enable fluid images
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+    font-family: $header-font-family;
+}
+
+h1 {
+    @include heading(alpha);
+}
+
+h2 {
+    @include heading(beta);
+}
+
+h3 {
+    @include heading(gamma);
+}
+
+figure, p, ul, ol {
+    @include rem(margin, 0 0 ($spacing-unit));
+}
+
+ul, ol {
+    @include rem(padding-left, $spacing-unit);
+}
+
+button {
+    @extend %default-button;
+}

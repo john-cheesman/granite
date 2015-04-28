@@ -1,0 +1,10 @@
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+// * Strip Unit Function                                                     *
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+// Returns a plain number without units
+//     $number: a number with any unit to be stripped
+// ---------------------------------------------------------------------------
+@function strip-unit($number) {
+    @return $number / ($number * 0 + 1);
+}

@@ -1,0 +1,18 @@
+//
+// Button Pattern
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Base styles for all buttons
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+%button {
+    @include inline-block;
+
+    padding: 0;
+    border: none;
+    background-image: none; // Reset for Firefox Android
+    background-color: transparent;
+
+    &:focus {
+        outline: none; // Remove webkit outline
+    }
+}

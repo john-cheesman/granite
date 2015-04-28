@@ -1,0 +1,31 @@
+//
+// Hierarchy Mixin
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Return the styles for the selected point in the hierarchy
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+@mixin heading($point) {
+    @if $point == kilo {
+        @include rem(font-size, $kilo);
+    }
+    @else if $point == alpha {
+        @include rem(font-size, $alpha);
+    }
+    @else if $point == beta {
+        @include rem(font-size, $beta);
+    }
+    @else if $point == gamma {
+        @include rem(font-size, $gamma);
+    }
+    @else if $point == delta {
+        @include rem(font-size, $delta);
+    }
+    @else if $point == epsilon {
+        @include rem(font-size, $epsilon);
+    }
+    @else if $point == zeta {
+        @include rem(font-size, $zeta);
+    }
+
+    margin: 0;
+}

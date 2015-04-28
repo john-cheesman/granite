@@ -1,0 +1,14 @@
+//
+// Grid Size Mixin
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Set the width of a grid item in percent
+//     $fraction: Fraction of the container to span
+//     $spacing:  Set the spacing width in pixels
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+@mixin grid-size($fraction, $spacing: $spacing-unit) {
+    @include rem(padding-left, $spacing);
+
+    float: left;
+    width: $fraction * 100%;
+}

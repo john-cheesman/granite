@@ -1,0 +1,19 @@
+//
+// Break Points
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+@mixin bp($point) {
+    $medium:      '(min-width: 500px)';
+    $medium-down: '(max-width: 500px)';
+    $large:       '(min-width: 1000px)';
+
+    @if $point == medium {
+        @media #{$medium} { @content; }
+    }
+    @if $point == medium-down {
+        @media #{$medium-down} { @content; }
+    }
+    @else if $point == large {
+        @media #{$large} { @content; }
+    }
+}

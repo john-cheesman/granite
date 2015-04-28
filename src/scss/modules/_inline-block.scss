@@ -1,0 +1,18 @@
+//
+// Inline Block Mixin
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// Display inline block, add vertical alignment and reset margin
+//     $align: Set optional vertical alignment
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+@mixin inline-block($align: top) {
+    display: inline-block;
+
+    @if $align {
+        vertical-align: $align;
+    }
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
