@@ -1,0 +1,23 @@
+{
+  "name": "granite-forms",
+  "version": "0.0.0",
+  "description": "Really useful base form styles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/john-cheesman/granite-forms.git"
+  },
+  "keywords": [
+    "forms",
+    "scss",
+    "framework"
+  ],
+  "author": "John Cheesman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/john-cheesman/granite-forms/issues"
+  }
+}
