@@ -63,5 +63,5 @@ $weight-bold:                         700 !default;
 
 // Import normalize and modules
 // _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-@import 'vendor/normalize';
+@import '../../node_modules/normalize.css/normalize.css';
 @import 'modules/all';
