@@ -1,3 +1,3 @@
 # Granite Forms
 
-Really useful base form styles.
+Modular, responsive and minimal SASS framework.

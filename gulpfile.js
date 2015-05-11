@@ -32,7 +32,10 @@ gulp.task('sass', function() {
     return sass(config.sass.src)
         .pipe(autoprefixer(config.autoprefixer))
         .pipe(minifycss())
-        .pipe(gulp.dest(config.sass.dest));
+        .pipe(gulp.dest(config.sass.dest))
+        .pipe(browsersync.reload({
+            stream: true
+        }));
 });
 
 gulp.task('clean', function() {
@@ -44,7 +47,9 @@ gulp.task('serve', function() {
 });
 
 gulp.task('watch', function() {
-    return gulp.watch(config.src, ['sass']);
+    return gulp.watch(config.sass.src, ['sass']);
 });
 
-gulp.task('default', ['clean', 'sass', 'serve', 'watch']);
+gulp.task('build', ['clean', 'sass']);
+
+gulp.task('default', ['build', 'serve', 'watch']);

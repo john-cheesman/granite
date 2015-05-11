@@ -28,16 +28,6 @@ fieldset {
     border: none;
 }
 
-input[type="number"] {
-    -moz-appearance: textfield;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    margin: 0;
-    -webkit-appearance: none;
-}
-
 input[type="search"] {
     box-sizing: border-box;
     -webkit-appearance: none;
@@ -49,5 +39,17 @@ button {
 
     &:focus {
         outline: none; // Remove webkit outline
+    }
+}
+
+@if $hide-number-spinners {
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+    
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        margin: 0;
+        -webkit-appearance: none;
     }
 }

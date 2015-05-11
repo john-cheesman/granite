@@ -1,10 +1,10 @@
 {
-  "name": "granite-forms",
+  "name": "granite",
   "version": "0.0.0",
-  "description": "Really useful base form styles",
+  "description": "Modular, responsive and minimal SASS framework",
   "repository": {
     "type": "git",
-    "url": "git://github.com/john-cheesman/granite-forms.git"
+    "url": "git://github.com/john-cheesman/granite.git"
   },
   "keywords": [
     "forms",
@@ -14,7 +14,7 @@
   "author": "John Cheesman",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/john-cheesman/granite-forms/issues"
+    "url": "https://github.com/john-cheesman/granite/issues"
   },
   "devDependencies": {
     "gulp": "~3.8.11",
